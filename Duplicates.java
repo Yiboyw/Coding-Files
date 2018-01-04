@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.*;
 
 public class Duplicates {
+	
+	//Finds duplicates of two integer arrays arr1 = {1,2,3,5,6,7}  and int[] arr2 = {3,6,7,8,20} will return {3,6,7}
 
 	public static void main(String[] args) {
 		
