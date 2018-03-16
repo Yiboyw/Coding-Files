@@ -26,9 +26,11 @@
 			int spaceCount = 0;
 			int index = 0;
 	
-			for(int i =0; i < str.length; i++){
+			for(int i =0; i < str.length; i++)
+			{
 				
-				if(str[i] == ' ') {
+				if(str[i] == ' ') 
+				{
 					spaceCount++;
 				}
 			}
@@ -36,16 +38,19 @@
 			
 			char[] result = new char[newLength];		
 		    
-			for (int i =0; i < str.length; i++) {
+			for (int i =0; i < str.length; i++) 
+			{
 				
-				if(str[i] == ' ') {
+				if(str[i] == ' ') 
+				{
 					result[index] = '%';
 					result[index+1] = '2';
 					result[index+2] = '0';
 					index = index + 3;
 				}	
 				
-				else {
+				else 
+				{
 					result[index] = str[i];
 					index++;
 				}
