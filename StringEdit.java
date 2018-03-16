@@ -4,10 +4,11 @@
  * (Note: if implementing in Java, please use a character array so that you can perform this operation in place.)
  */
  
- public class StringEdit {
+ public class StringEdit
+ {
  
-    public static void main(String[] args)
-		{
+    	public static void main(String[] args)
+	{
 			String newstring = "This is a";
 		
 			char[] charArray = newstring.toCharArray();
@@ -16,10 +17,11 @@
 			
 			space(charArray, newstring.length());
 			
-		}
+	}
  
  
- public static String space(char[] str, int length){
+ 	public static String space(char[] str, int length)
+	{
 			int newLength = 0;
 			int spaceCount = 0;
 			int index = 0;
@@ -53,6 +55,6 @@
 			System.out.println("result: " + print);
 			
 			return print;
-		}
+	}
     
 }
