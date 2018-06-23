@@ -32,11 +32,6 @@ public class Duplicates {
 			  for(int j=0; j<arr2.length; j++){
 				  if (arr1[i] == arr2[j]){
 					  System.out.println("These are matches "+ arr1[i]);
-					  
-//					  Why do these two codes give us different output?
-//					  int index=0;
-//					  result[index] = arr1[i];
-//					  index++;
  					  
 					  result[count] = arr1[i];
 					  count++;					  
