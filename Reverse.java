@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public class Reverse
 
 //The problem is to reverse a given string
@@ -27,6 +30,27 @@ public class Reverse
 	        //3. Using Recursive Method
 	        System.out.println();
 	        System.out.println(recursiveMethod(str));    //Output : avaJyM
+		    
+		    public static void main(String[] args) {
+        
+		
+		//HackerRank: Given a string , print Yes if it is a palindrome, print No otherwise.
+		Scanner sc=new Scanner(System.in);
+		String A=sc.next();
+		/* Enter your code here. Print output to STDOUT. */
+		 StringBuffer buffer = new StringBuffer(A);
+		buffer.reverse();
+		String str = buffer.toString();
+	       // System.out.println("String "+ str);
+
+		if (str.equals(A)){
+		    System.out.println("Yes");
+		}
+		else{
+		     System.out.println("No");
+		}
+    
+    }
 	    }
 	    
 	    //Recursive method to reverse string
