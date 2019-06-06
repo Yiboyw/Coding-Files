@@ -23,7 +23,7 @@ public class Solution {
         
         for (int i =0; i < s.length(); i++) { //Goes through the input String s 
 	        	if (i + k <= s.length()) {//Substring doesn't go over the given subsize
-                        String string1 = s.substring(i,i+k); //createss substrings of size k
+                        String string1 = s.substring(i,i+k); //creates substrings of size k
 	        			set.add(string1); //adds the substring to the TreeSet	
 	        	}
 		}
