@@ -16,8 +16,8 @@ public class binaryGap {
 	}
 	
 	//Check to see if the number is a power of 2, if so it has no gaps.
-    //If number = 2, 4, 8, 16, 32, 64, etc it has no gaps.
-    public static boolean isPowerofTwoMethod(int n) {
+    	//If number = 2, 4, 8, 16, 32, 64, etc it has no gaps.
+    	public static boolean isPowerofTwoMethod(int n) {
     		if (n == 0 || n == 1) {
     			return false;
     		}
@@ -31,10 +31,9 @@ public class binaryGap {
     			n = n / 2;
     		}
     		return true;
-    }
-	
-    //Method to convert number to binary string representation
-    public static String binaryString(int n) {
+    	}
+	//Method to convert number to binary string representation
+	public static String binaryString(int n) {
     		String result = "";
     		while (n >= 1) {
     			int remainder = n % 2;
@@ -47,10 +46,9 @@ public class binaryGap {
     			n = n / 2;
     		}
     		return result;
-    }
-    
-    //Method to calculate largest binary gap in the number
-    public static int binaryGap(int N) {
+    	}
+    	//Method to calculate largest binary gap in the number
+    	public static int binaryGap(int N) {
     		//The number has no binary gaps if equal of 0, 1, or is an exponent of 2
 		if (N == 0 || N == 1 || isPowerofTwoMethod(N) == true) { 
 			return 0;
